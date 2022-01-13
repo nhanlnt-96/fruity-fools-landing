@@ -6,6 +6,10 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import MainLayout from "./components/mainLayout/MainLayout";
 
+// import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/App.scss';
+
 // export const truncate = (input, len) =>
 //   input.length > len ? `${input.substring(0, len)}...` : input;
 //

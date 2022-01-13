@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "../../styles/rwd";
+
+.banner-comp {
+  min-height: 100vh;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  &-container {
+    min-height: calc(100vh - 72px);
+  }
+
+  &-content {
+    z-index: 1;
+  }
+
+  .blur-bg {
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.banner-comp-container .banner-comp-content .banner-comp {
+  &-title .title {
+    color: #ffffff;
+    font-family: Monstar, sans-serif !important;
+    font-size: 58px;
+    text-align: center;
+    line-height: 80px;
+    @include mobile {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &-button .button-item {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    min-width: 300px;
+    padding: 10px;
+    text-align: center;
+    height: 70px;
+    margin-top: 24px;
+
+    svg {
+      color: inherit;
+      font-size: inherit;
+      margin-right: 12px;
+    }
+
+    &:hover {
+      background-image: url("../../assets/icons/slime.png");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: #EB582E;
+      font-family: Monstar, sans-serif !important;
+      background-color: unset;
+
+      svg {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      font-size: 20px;
+      min-width: 200px;
+    }
+  }
+}

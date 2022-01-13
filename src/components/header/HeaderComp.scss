@@ -1,0 +1,126 @@
+@import "../../styles/variables";
+@import "../../styles/rwd";
+
+.header-comp {
+  z-index: 1;
+
+  &-logo {
+    width: 70px;
+    margin-right: 0 !important;
+  }
+
+  &-social .item, &-menu .item {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    color: #ffffff !important;
+    cursor: pointer;
+  }
+
+  &-social, &-btn {
+    flex: 1;
+  }
+
+  &-social {
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      transition: background-color .2s ease-out;
+      border-radius: 100%;
+
+      &:hover {
+        background-color: #ffffff;
+        color: $primary-color !important;
+      }
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    @include mobile {
+      flex-direction: row !important;
+      margin-bottom: 12px;
+      .item:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+
+    @include tablet {
+      flex-direction: row !important;
+      margin-bottom: 12px;
+      .item:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &-menu {
+    flex: 3;
+
+    .item {
+      font-size: 20px;
+      font-family: Monstar, sans-serif !important;
+      font-weight: 200;
+      min-width: 100px;
+      text-align: center;
+
+      &:hover {
+        background-image: url("../../assets/icons/slime.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      @include mobile {
+        margin-bottom: 12px;
+      }
+      @include tablet {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &-btn .button-item {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary-color;
+    height: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-image: url("../../assets/icons/slime.png");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: #EB582E;
+      font-family: Monstar, sans-serif !important;
+      background-color: unset;
+    }
+
+    @include mobile {
+      width: 60%;
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+    @include desktop {
+      width: 80%;
+    }
+    @include wide-desktop {
+      width: 70%;
+    }
+  }
+
+  &-toggle-custom {
+    color: unset !important;
+    box-shadow: unset !important;
+    border-color: unset !important;
+  }
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Impact";
+  src: url(ImpactLTStd.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Monstar";
+  src: url(MrMonstar.woff) format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Impact', sans-serif !important;
+}
+
+.comp-height {
+  min-height: 100vh;
+  padding: 24px 0;
+}
