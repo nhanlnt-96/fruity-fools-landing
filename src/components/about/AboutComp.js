@@ -7,7 +7,7 @@ import './AboutComp.scss';
 const AboutComp = () => {
   return (
     <Container fluid className="about-comp comp-height-without-parallax">
-      <div className="sub-bg-top">
+      <div className="comp-slime-sug-bg">
         <img src={SubAboutBg} alt="fruity-fools"/>
       </div>
       <Container className="about-comp-container d-flex justify-content-center align-items-center">

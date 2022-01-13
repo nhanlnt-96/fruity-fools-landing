@@ -1,27 +1,11 @@
 @import "../../styles/rwd";
 
 .about-comp {
-  background-color: rgb(236, 93, 52);
+  background-color: rgb(235, 80, 45);
   position: relative;
 
   &-container {
     min-height: 100vh;
-  }
-
-  .sub-bg-top, .sub-bg-bottom {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: -100px;
-
-    img {
-      width: 100%;
-    }
-
-    @include mobile {
-      height: 80px;
-      bottom: -80px;
-    }
   }
 }
 

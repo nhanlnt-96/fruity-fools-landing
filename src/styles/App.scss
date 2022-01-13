@@ -1,3 +1,5 @@
+@import "./rwd";
+
 @font-face {
   font-family: "Impact";
   src: url(ImpactLTStd.woff) format("woff");
@@ -39,4 +41,22 @@
 .comp-height-without-parallax {
   min-height: 100vh;
   padding: 24px 0;
+}
+
+.comp-slime-sug-bg {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: -150px;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mobile {
+    height: 80px;
+    bottom: -80px;
+  }
 }
