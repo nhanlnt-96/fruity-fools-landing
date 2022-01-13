@@ -63,3 +63,13 @@
     }
   }
 }
+
+.banner-comp-container .banner-comp-mint {
+  width: 60%;
+  @include mobile {
+    width: 100%;
+  }
+  @include tablet {
+    width: 70%;
+  }
+}
