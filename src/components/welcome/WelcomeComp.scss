@@ -1,0 +1,35 @@
+@import "../../styles/rwd";
+
+.welcome-comp {
+  .blur-dark-bg {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  &-container {
+    min-height: 100vh;
+  }
+}
+
+.welcome-comp-container .welcome-comp-title {
+  z-index: 1;
+
+  .title, .sub-title {
+    color: #ffffff;
+  }
+
+  .title {
+    font-size: 72px;
+    font-weight: bold;
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+
+  .sub-title {
+    font-size: 30px;
+    margin-top: 24px;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+}

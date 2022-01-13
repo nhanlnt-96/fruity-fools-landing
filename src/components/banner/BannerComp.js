@@ -9,9 +9,9 @@ import {SiDiscord} from "react-icons/all";
 
 const BannerComp = () => {
   return (
-    <Parallax bgImage={BgBanner} strength={500} className="banner-comp">
+    <Parallax bgImage={BgBanner} strength={500} className="banner-comp comp-height-with-parallax">
       <HeaderComp/>
-      <div className="blur-bg"/>
+      <div className="blur-dark-bg"/>
       <Container className="banner-comp-container d-flex justify-content-center align-items-center">
         <Row className="banner-comp-content">
           <div className="banner-comp-title">

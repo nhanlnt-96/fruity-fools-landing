@@ -15,7 +15,23 @@
   font-family: 'Impact', sans-serif !important;
 }
 
-.comp-height {
+.comp-height-with-parallax {
   min-height: 100vh;
-  padding: 24px 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  .react-parallax-bgimage {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .blur-dark-bg {
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
