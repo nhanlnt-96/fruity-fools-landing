@@ -48,25 +48,6 @@
         font-size: 50px;
         z-index: 1;
       }
-
-      @include mobile {
-        background: url("../../assets/imgs/subAboutBg.png") no-repeat center;
-        background-size: cover;
-        position: relative;
-        .bg-blur-mobile {
-          display: block;
-          height: 100%;
-          position: absolute;
-          width: 100%;
-          left: 0;
-          top: 0;
-          background-color: rgba(255, 255, 255, .4);
-        }
-        .title {
-          color: #000000;
-          z-index: 1;
-        }
-      }
     }
 
     .content {

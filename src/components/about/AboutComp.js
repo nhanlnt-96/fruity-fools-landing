@@ -17,10 +17,7 @@ const AboutComp = () => {
           {/*</div>*/}
           <div className="content-detail">
             <div data-aos="zoom-in" className="content-title d-flex justify-content-center align-items-center">
-              <div className="bg-blur-mobile"/>
-              <div className="title-container">
                 <h6 className="title">About us</h6>
-              </div>
             </div>
             <div data-aos="fade-right" className="content">
               <p className="desc">Fruity Fools collection is being introduced to the NFT community by a team of
