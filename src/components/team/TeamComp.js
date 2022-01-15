@@ -1,16 +1,14 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import {teamData} from "../../configs/teamData";
-// import SubBg from '../../assets/imgs/subBgTeam.png';
+import BgComp from "../../assets/imgs/bgTeam.png";
+import {Parallax} from "react-parallax";
 
 import './TeamComp.scss';
 
 const TeamComp = () => {
   return (
-    <Container fluid className="team-comp comp-height-without-parallax">
-      {/*<div className="comp-slime-sug-bg">*/}
-      {/*  <img src={SubBg} alt="fruity-fools"/>*/}
-      {/*</div>*/}
+    <Parallax bgImage={BgComp} strength={500} className="about-comp comp-height-with-parallax">
       <Container className="team-comp-container d-flex justify-content-center align-items-center">
         <Row className="team-comp-content">
           <h6 data-aos="fade-up" className="team-comp-title">Team member</h6>
@@ -30,7 +28,7 @@ const TeamComp = () => {
           }
         </Row>
       </Container>
-    </Container>
+    </Parallax>
   );
 };
 

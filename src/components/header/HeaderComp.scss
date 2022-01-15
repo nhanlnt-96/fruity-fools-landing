@@ -85,22 +85,24 @@
   }
 
   &-btn .button-item {
-    font-weight: bold;
     text-transform: uppercase;
     color: $primary-color;
     height: 100%;
     padding: 20px 0;
     border: none;
     outline: none;
+    font-family: Monstar, sans-serif !important;
+    font-weight: lighter;
+
 
     &:hover {
       background-image: url("../../assets/icons/slime.png");
       background-position: top center;
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      color: #EB582E;
-      font-family: Monstar, sans-serif !important;
+      color: #ffffff !important;
       background-color: unset;
+      font-weight: bold;
     }
 
     @include mobile {
