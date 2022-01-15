@@ -1,15 +1,13 @@
 import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import {roadmapData} from "../../configs/roadmapData";
-import BgRoadmap from "../../assets/imgs/bgRoadmap.jpeg";
-import {Parallax} from "react-parallax";
 
 import './RoadmapComp.scss';
 
 const RoadmapComp = () => {
   return (
-    <Parallax bgImage={BgRoadmap} strength={500} className="roadmap-comp comp-height-with-parallax">
-      <div className="blur-dark-bg"/>
+    <Container fluid className="roadmap-comp comp-height-without-parallax">
+      <div className="border-img-top"/>
       <Container className="roadmap-comp-container d-flex flex-column justify-content-center align-items-center">
         {
           roadmapData.map((main, index) => (
@@ -33,7 +31,8 @@ const RoadmapComp = () => {
           ))
         }
       </Container>
-    </Parallax>
+      <div className="border-img-bottom"/>
+    </Container>
   );
 };
 
