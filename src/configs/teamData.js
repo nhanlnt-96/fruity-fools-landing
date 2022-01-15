@@ -1,6 +1,5 @@
-import Member1 from '../assets/imgs/teamMember1.webp';
-import Member2 from '../assets/imgs/teamMember2.webp';
-import Member3 from '../assets/imgs/teamMember3.webp';
+import Member1 from '../assets/imgs/teamMember1.png';
+import Member2 from '../assets/imgs/teamMember2.png';
 
 
 export const teamData = [
@@ -20,6 +19,6 @@ export const teamData = [
     name: "YarRamish",
     title: "Strategic consultant",
     about: "@ramishsafa",
-    ava: Member3
+    ava: Member1
   }
 ]

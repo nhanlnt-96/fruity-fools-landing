@@ -1,20 +1,46 @@
 @import "../../styles/rwd";
 
 .roadmap-comp {
-  //background-color: #7FA82A;
-  //padding-top: 150px !important;
+  background-color: #DE3592;
+  position: relative;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  .border-img-top, .border-img-bottom {
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-size: 100% 100% !important;
+  }
+
+  .border-img-top {
+    background: url("../../assets/imgs/borderTop1.png") no-repeat center;
+    top: 0;
+  }
+
+  .border-img-bottom {
+    background: url("../../assets/imgs/borderTop.png") no-repeat center;
+    bottom: -200px;
+    transform: scaleX(-1);
+  }
 
   &-container {
     height: 100%;
-    padding: 24px 0;
+    padding-top: 224px;
+    padding-bottom: 24px;
   }
 
-  //@include mobile {
-  //  padding-top: 80px !important;
-  //}
-
-  .blur-dark-bg {
-    background-color: rgba(255, 255, 255, 0.4) !important;
+  @include mobile {
+    .border-img-top, .border-img-bottom {
+      height: 100px;
+    }
+    .border-img-bottom {
+      bottom: -100px;
+    }
+    .container {
+      padding-top: 124px;
+    }
   }
 }
 

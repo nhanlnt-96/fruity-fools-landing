@@ -6,7 +6,7 @@ import './FAQComp.scss';
 
 const FaqComp = () => {
   return (
-    <Container fluid className="faq-comp comp-height">
+    <Container fluid className="faq-comp comp-height-without-parallax">
       <Container className="faq-comp-container d-flex flex-column justify-content-center align-items-center">
         <h6 data-aos="fade-up" className="title">FAQ</h6>
         <Accordion className="accordion-custom">
