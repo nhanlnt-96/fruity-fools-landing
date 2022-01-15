@@ -1,9 +1,6 @@
 @import "../../styles/rwd";
 
 .about-comp {
-  background-color: rgb(235, 80, 45);
-  position: relative;
-
   &-container {
     min-height: 100vh;
   }
@@ -11,6 +8,9 @@
 
 .about-comp-container .about-comp-title {
   z-index: 1;
+  @include mobile {
+    padding: 24px 0;
+  }
 
   .title, .sub-title {
     color: #ffffff;

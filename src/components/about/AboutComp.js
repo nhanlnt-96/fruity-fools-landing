@@ -1,15 +1,14 @@
 import React from 'react';
 import {Container, Row} from "react-bootstrap";
-import SubAboutBg from '../../assets/imgs/subBgAbout.png';
+import BgComp from "../../assets/imgs/slimeBg.jpg";
+import {Parallax} from "react-parallax";
 
 import './AboutComp.scss';
 
 const AboutComp = () => {
   return (
-    <Container fluid className="about-comp comp-height-without-parallax">
-      <div className="comp-slime-sug-bg">
-        <img src={SubAboutBg} alt="fruity-fools"/>
-      </div>
+    <Parallax bgImage={BgComp} strength={500} className="about-comp comp-height-with-parallax">
+      <div className="blur-dark-bg"/>
       <Container className="about-comp-container d-flex justify-content-center align-items-center">
         <Row className="about-comp-title">
           <h1 data-aos="fade-up" className="title">About us</h1>
@@ -23,7 +22,7 @@ const AboutComp = () => {
             sellout). This Launch is more than a destination, it is a path for a fruitful future.</p>
         </Row>
       </Container>
-    </Container>
+    </Parallax>
   );
 };
 

@@ -2,21 +2,18 @@
 @import "../../styles/rwd";
 
 .team-comp {
-  background-color: rgb(216,60,60);
+  background-color: rgb(216, 60, 60);
   padding-top: 150px !important;
   position: relative;
 
   &-container {
-    height: 100%;
-  }
-
-  @include mobile {
-    padding-top: 80px !important;
+    min-height: 100vh;
   }
 }
 
 .team-comp-container .team-comp-content {
   .team-comp-title {
+    z-index: 1;
     font-size: 72px;
     text-transform: uppercase;
     font-family: Impact, sans-serif;
@@ -48,5 +45,9 @@
         width: 100%;
       }
     }
+  }
+
+  @include mobile {
+    padding: 24px 0;
   }
 }
